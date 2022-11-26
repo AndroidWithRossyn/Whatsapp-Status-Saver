@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Social Saver</string>
+    <string name="app_name_nev">Social\nSaver</string>
+    <string name="versioncode">V1.6.8.19</string>
+
+
+
+    <string name="App_ID">ca-app-pub-4577382853353362~2111725699</string>
+    <string name="BannerAd">ca-app-pub-4577382853353362/8094502507</string>
+    <string name="InterstitialAd">ca-app-pub-4577382853353362/2842175826</string>
+
+    <string name="ad_attribution">Ad</string>
+
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="developername">Ban Rossyn</string>
+    <string name="banrossyn_instalink">https://www.instagram.com/banrossyn</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="email_feedback">banrossyn@gmail.com</string>
+    <string name="policy_url">https://banrossyn.blogspot.com/2022/01/%20InStoryPrivacyPolicy.html</string>
+    <string name="developerlink">https://play.google.com/store/apps/dev?id=5306067645342206751</string>
+
+
+    <string name="share_txt">Hey view/download this image</string>
+    <string name="share_image_via">Share File via..</string>
+    <string name="gallery_tag">View All Your Downloaded Items</string>
+    <string name="enter_url">Enter Url</string>
+    <string name="enter_valid_url">Enter Valid Url</string>
+
+    <string name="do_u_want_to_dlt">Do you want to delete?</string>
+    <string name="file_deleted">File Deleted.</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_u_want_to_download_media_from_pvt">Don\'t Want to Download Media from Private Account?</string>
+    <string name="no_net_conn">No Internet Connection</string>
+    <string name="download_complete">Download Completed</string>
+    <string name="app_not_available">App Not Available.</string>
+
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="saved_to">Saved to:</string>
+    <string name="whatsapp_not_installed">Whtasapp not installed.</string>
+    <string name="no_app_installed">No application found to open this file.</string>
+
+
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="paste_link">Paste Link</string>
+    <string name="download">Save</string>
+    <string name="paste">Paste</string>
+    <string name="no_result_found">No items</string>
+    <string name="downloading">Downloading...</string>
+    <string name="getting_downloading_link">Getting Downlading Link...</string>
+
+
+    <string name="gallery">Downloads</string>
+    <string name="download_started">Download Started</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view_stories">View Stories and Download from Private Account</string>
+
+    <string name="stories">Stories</string>
+    <string name="wamedia">Directory: Download/Social Saver/Whatsapp </string>
+    <string name="allow_whatsapp_access">Allow Whatsapp Access</string>
+    <string name="allow_app_to_access_whatsapp_status_folder">Access Whatsapp Status Folder</string>
+    <string name="allow_whatsapp">Allow</string>
+    <string name="ok">OK</string>
+    <string name="wrong_folder">Wrong folder</string>
+    <string name="selected_wrong_folder">You have selected wrong folder. Please select .Statuses folder to view Whatsapp Status.</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_below_txt_size">15sp</dimen>
+    <dimen name="about_above_txt_size">17sp</dimen>
+
+    <dimen name="home_above">20sp</dimen>
+    <dimen name="home_below_ttxt">15sp</dimen>
+
+    <dimen name="btn_size">17sp</dimen>
+    <dimen name="about_us_title">16sp</dimen>
+    <dimen name="about_us_tag_line">13sp</dimen>
+    <dimen name="about_version_txt_size">13sp</dimen>
+    <dimen name="download_txt_size">14sp</dimen>
+    <dimen name="paste_txt_size">14sp</dimen>
+    <dimen name="with_without_water_mark">12sp</dimen>
+    <dimen name="whatsapp_tab_txt_size">12sp</dimen>
+    <dimen name="home_app_title">16sp</dimen>
+    <dimen name="home_tag_line">13sp</dimen>
+    <dimen name="home_item_txt_size">16sp</dimen>
+</resources>

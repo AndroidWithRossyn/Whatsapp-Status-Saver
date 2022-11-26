@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359183137094",
+    "project_id": "fb-social-saver",
+    "storage_bucket": "fb-social-saver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359183137094:android:567d71d41930bff2b48d47",
+        "android_client_info": {
+          "package_name": "com.banrossyn.socialsaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359183137094-61vbqbn6s2btls9vinv1bu8go8sntque.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA28qYUgRtLc0W-ZBt8adXW-huyZS1ZaXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359183137094-61vbqbn6s2btls9vinv1bu8go8sntque.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
