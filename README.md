@@ -30,14 +30,16 @@
 .
 
 >Paid Source Code Available
-
+  <a href="https://github.com/OmaPrakash/Whatsapp-Status-Saver/blob/main/StausSaver-debug.apk?raw=true">Download Demo</a>. 
 <p align="center">
     <a href="https://play.google.com/store/apps/details?id=com.banrossyn.socialsaver">
       <img src="https://user-images.githubusercontent.com/118904953/204097256-27a0d979-7626-48c7-8399-2a3b6a81e5eb.png" width="1280" />
     </a>
   </p>
+  
+
 <p align="center">
-    <a href="https://play.google.com/store/apps/details?id=com.banrossyn.socialsaver">
+    <a href="https://github.com/OmaPrakash/Whatsapp-Status-Saver/blob/main/StausSaver-debug.apk?raw=true">
       <img src="https://user-images.githubusercontent.com/118904953/203556484-c491adb2-cddc-414b-b7f7-6b55e4e2f006.png" width ="100" />
     </a>
       <a href="https://wa.me/+919694260426">
