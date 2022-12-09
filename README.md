@@ -29,7 +29,7 @@
 .
 .
 
->Paid Source Code Available
+>Paid Source Code Available only in 560INR
   <a href="https://github.com/OmaPrakash/Whatsapp-Status-Saver/blob/main/StausSaver-debug.apk?raw=true">Download Demo</a>. 
 <p align="center">
     <a href="https://play.google.com/store/apps/details?id=com.banrossyn.socialsaver">
