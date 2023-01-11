@@ -2,13 +2,16 @@
   <h1 align="center">Whatsapp-Status-Saver</h1>
   
   <h4>Status Saver App helps you save Video, Photo from Whatsapp & Whatsapp Business.</h4>
+  
+- 👨‍💻 All of my projects are available at [Playstore](https://play.google.com/store/apps/dev?id=5306067645342206751)
 
- 
-   
-   
-- ⚡  If You want to join us than message on <a href="banrossyn@gmail.com">Mail</a>
-&
-<a href="https://t.me/banrossyn">Telegram</a>. 
+- 📝 Articles at [Blog](https://banrossyn.blogspot.com/)
+
+- 💬 **JAVA & KOTLIN**
+
+- *We provide reskin service of java android code at very low cost*
+
+- ⚡  If You want to join us than message on <a href="https://wa.me/+919694260426/">Whatsapp</a> , <a href="https://t.me/banrossyn">Telegram</a>  & <a href="banrossyn@gmail.com">Mail</a>.
 
 > Note: `-- Apache License 2.0` you can't Publish any Source code without permission.
 # 
