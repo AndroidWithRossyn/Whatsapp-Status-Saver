@@ -1,17 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="purple_200">@color/main_bg_color</color>
+    <color name="purple_500">@color/main_bg_color</color>
+    <color name="purple_700">@color/main_bg_color</color>
+    <color name="teal_200">@color/main_bg_color</color>
+    <color name="teal_700">@color/main_bg_color</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 
-    <color name="whatsapp">#075E54</color>
-    <color name="colorPrimary">#F7021B2A</color>
-    <color name="colorPrimaryDark">#021B2A</color>
-    <color name="colorAccent">#021B2A</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#BF000000</color>
     <color name="transparent">#00000000</color>
-    <color name="grey">#BFBFBF</color>
-    <color name="black_transparent">#40000000</color>
-    <color name="whatsapp_color">#3DE25C</color>
-    <color name="layout_background_colour">#E8DFDF</color>
-    <color name="Status_Bar">#ECDBDB</color>
 
+    <color name="splash_text">#1DB06F</color>
+    <color name="header_text_color">#1DB06F</color>
+    <color name="tab_txt_press">#ffffff</color>
+    <color name="tab_txt_unpress">#1DB06F</color>
+    <color name="main_bg_color">#F9FBFD</color>
+    <color name="thumb_color">#A1A1A2</color>
+    <color name="track_color">#DADCDD</color>
+    <color name="chkbox_color">#ffffff</color>
+    <color name="home_top_start_color">#1DB06F</color>
+    <color name="home_top_end_color">#1DA469</color>
+    <color name="round_btn_bg">#80000000</color>
+    <color name="drawer_unpress">#AFAEAE</color>
+    <color name="drawer_press">#1DB06F</color>
+    <color name="popup_bg">#fff</color>
+    <color name="popup_btn_color">#E6F6ED</color>
+    <color name="btn_icon">#1DB06F</color>
+    <color name="btn_text">#1DB06F</color>
+    <color name="circle_pre">#1DB06F</color>
+    <color name="text_bg_pre">#fff</color>
+    <color name="pre_icon_color">#fff</color>
+    <color name="pre_text_color">#1DB06F</color>
+    <color name="help_text">#1DB06F</color>
+    <color name="text_hint_color">#70BA99</color>
+    <color name="chat_main_txt_color">#000</color>
+    <color name="chat_sub_txt_color">#8D9CA6</color>
+    <color name="user_chat_main_txt_color">#000</color>
+    <color name="user_chat_sub_txt_color">#8D9CA6</color>
+
+
+    <!--intro slider  \\-->
+    <!--slider text-->
+    <color name="slider_hading_text">#1DB06F</color>
+    <color name="slider_sub_text">#000</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#DFF9EE</color>
+    <color name="bg_screen2">#DFF9EE</color>
+    <color name="bg_screen3">#DFF9EE</color>
+    <color name="bg_screen4">#000000</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#BDBDBF</color>
+    <color name="dot_dark_screen2">#BDBDBF</color>
+    <color name="dot_dark_screen3">#BDBDBF</color>
+    <color name="dot_dark_screen4">#BDBDBF</color>
+    <color name="dot_dark_screen5">#BDBDBF</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#818384</color>
+    <color name="dot_light_screen2">#818384</color>
+    <color name="dot_light_screen3">#818384</color>
+    <color name="dot_light_screen4">#818384</color>
+    <color name="dot_light_screen5">#818384</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
+    <!--//  intro slider-->
 </resources>

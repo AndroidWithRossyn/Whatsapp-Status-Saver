@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/videoGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/_5sdp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:layout_above="@+id/actionLay"
+        android:verticalSpacing="@dimen/_7sdp" />
+
+    <LinearLayout
+        android:id="@+id/actionLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/btm_btn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/selectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/btn_icon"
+                android:text="@string/select_all"
+                android:textColor="@color/btn_text"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/deleteIV"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/btm_btn"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_4sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/ic_delete"
+                app:tint = "@color/btn_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/btn_text"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/loader_lay" />
+    <include layout="@layout/empty_lay"/>
+
+</RelativeLayout>

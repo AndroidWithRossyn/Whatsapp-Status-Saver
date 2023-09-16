@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".warecovermsg.DeletedMsgActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/back"
+            app:tint="@color/header_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/whatsapp_deleted_msg"
+            android:textColor="@color/header_text_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/banner_container"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDeletedMsg"
+            android:layout_width="match_parent"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/loader_lay" />
+
+    <include layout="@layout/empty_deleted" />
+
+    <include layout="@layout/banner_ad_lay" />
+
+</RelativeLayout>

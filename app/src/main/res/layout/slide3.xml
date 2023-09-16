@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_220sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="stepthree.json"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_step3"
+            android:textColor="@color/slider_hading_text"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:gravity="center"
+            android:text="@string/desc_step3"
+            android:textAlignment="center"
+            android:textColor="@color/slider_sub_text"
+            android:textStyle="bold"
+            android:textSize="@dimen/slide_desc" />
+
+    </LinearLayout>
+
+</RelativeLayout>

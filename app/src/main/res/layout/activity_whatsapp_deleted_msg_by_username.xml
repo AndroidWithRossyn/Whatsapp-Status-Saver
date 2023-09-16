@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/bgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/chat_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/main_bg_color">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/back"
+            app:tint="@color/header_text_color" />
+
+        <TextView
+            android:id="@+id/tvActivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxWidth="@dimen/_240sdp"
+            android:maxLines="1"
+            android:text="@string/whatsapp_deleted_msg"
+            android:textColor="@color/header_text_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_container"
+        android:layout_below="@id/header">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDeletedMsgByUsername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingTop="@dimen/_10sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/loader_lay" />
+
+    <include layout="@layout/empty_deleted" />
+
+    <include layout="@layout/banner_ad_lay" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@color/main_bg_color</color>
+    <color name="purple_500">@color/main_bg_color</color>
+    <color name="purple_700">@color/main_bg_color</color>
+    <color name="teal_200">@color/main_bg_color</color>
+    <color name="teal_700">@color/main_bg_color</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main_bg_color">#16242E</color>
+    <color name="thumb_color">#1DB06F</color>
+    <color name="tab_txt_press">#16242E</color>
+    <color name="track_color">#50525C</color>
+    <color name="home_top_start_color">#283D4C</color>
+    <color name="home_top_end_color">#283D4C</color>
+    <color name="round_btn_bg">#80000000</color>
+    <color name="popup_bg">#16242E</color>
+    <color name="popup_btn_color">#1F313D</color>
+    <color name="text_bg_pre">#1F313D</color>
+    <color name="pre_icon_color">#1F313D</color>
+    <color name="chat_main_txt_color">#fff</color>
+    <color name="chat_sub_txt_color">#E1E1E1</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/alertLay"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/tap_to_open"
+                android:textColor="@color/header_text_color"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/btn_wapp"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:background="@drawable/home_btn"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wapp" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_37sdp"
+                    android:text="@string/wapp"
+                    android:textStyle="bold"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_wapp_bus"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/home_btn"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wa_business" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_37sdp"
+                    android:text="@string/whatsapp_business"
+                    android:textStyle="bold"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

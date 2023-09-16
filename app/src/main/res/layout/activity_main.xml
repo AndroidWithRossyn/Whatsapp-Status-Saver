@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:id="@+id/header">
+
+        <ImageView
+            android:id="@+id/navIV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/menu"
+            app:tint="@color/header_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/recent_status"
+            android:textColor="@color/header_text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"/>
+
+        <ImageView
+            android:id="@+id/whatsIV"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:src="@drawable/wapp"
+            app:tint="@color/header_text_color" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/header"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabGravity="center"
+        app:tabRippleColor="@color/transparent"
+        app:tabIndicatorColor="@color/transparent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_container"
+        android:layout_below="@id/tablayout" />
+
+    <include layout="@layout/banner_ad_lay"/>
+</RelativeLayout>

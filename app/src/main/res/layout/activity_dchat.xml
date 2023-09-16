@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/back"
+            app:tint="@color/header_text_color" />
+
+        <TextView
+            android:id="@+id/topTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/d_chat"
+            android:textColor="@color/header_text_color"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/txtLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_margin="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="US"
+            app:ccp_textColor="@color/header_text_color"
+            app:ccp_textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/phone_number_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/home_btn"
+            android:hint="@string/enter_mobile_number"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="@color/header_text_color"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/msg_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/txtLay"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/home_btn"
+        android:gravity="center"
+        android:hint="@string/enter_your_message"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/header_text_color"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_edt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:id="@+id/wapp"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/home_btn"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/banner_ad_lay" />
+</RelativeLayout>

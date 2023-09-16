@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:layoutDirection="ltr"
+    tools:context=".font.FontActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:id="@+id/header">
+        <ImageView
+            android:id="@+id/navIV"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            app:tint="@color/header_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/f_font"
+            android:textColor="@color/header_text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/header"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/transparent"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabRippleColor="@color/transparent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tablayout"
+        android:layout_above="@+id/banner_container"/>
+
+    <include layout="@layout/banner_ad_lay"/>
+
+</RelativeLayout>

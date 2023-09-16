@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#000"
+    android:layoutDirection="ltr"
+    android:keepScreenOn="true">
 
-    <VideoView
-        android:id="@+id/videoView"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true" />
+        android:gravity="center">
+
+        <VideoView
+            android:id="@+id/displayVV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
     <ImageView
-        android:id="@+id/imBack"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_back"
-        app:tint="@color/black"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_alignParentTop="true"/>
+        android:id="@+id/backIV"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/ic_circle_btn"
+        android:padding="@dimen/_7sdp"
+        android:src="@drawable/back" />
+
+
+
 </RelativeLayout>

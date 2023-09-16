@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/round_theme"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_17sdp"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingRight="@dimen/_7sdp">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/user_chat_main_txt_color"
+            android:textSize="@dimen/_13sdp"
+            tools:text="message" />
+
+        <TextView
+            android:id="@+id/tvMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/user_chat_sub_txt_color"
+            tools:text="2022-01-30 10:00AM" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="#D1CFC8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,66 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.banrossyn.socialsaver">
+    package="com.Udaicoders.wawbstatussaver">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-   <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.webkit.PermissionRequest" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <queries>
         <package android:name="com.whatsapp" />
         <package android:name="com.whatsapp.w4b" />
-
     </queries>
 
     <application
-        android:name=".firebase.MyApplication"
+        android:name="com.Udaicoders.wawbstatussaver.MyApp"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:usesCleartextTraffic="true"
-        tools:ignore="GoogleAppIndexingWarning">
+        android:theme="@style/Theme.WAStatusSaver"
+        tools:replace="android:supportsRtl">
+
         <activity
-            android:name=".SplashScreen"
-            android:exported="true">
+            android:name="com.Udaicoders.wawbstatussaver.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WhatsappActivity" />
-        <activity android:name=".FullViewActivity" />
-        <activity android:name=".GalleryActivity" />
-        <activity android:name=".VideoPlayerActivity" />
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/App_ID" />
+        <activity android:name="com.Udaicoders.wawbstatussaver.intro.IntroActivity"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.font.FontActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.HelpActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.MyStatusActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.PreviewActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.PolicyActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity android:name="com.Udaicoders.wawbstatussaver.VideoPlayerActivity" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.waweb.WAWebActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|uiMode"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:persistableMode="persistAcrossReboots">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.DChatActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.Udaicoders.wawbstatussaver.warecovermsg.DeletedMsgByUsernameActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity android:name="com.Udaicoders.wawbstatussaver.warecovermsg.DeletedMsgActivity"
+            android:screenOrientation="nosensor"/>
 
         <service
-            android:name=".firebase.MyFirebaseMessagingService"
+            android:name="com.Udaicoders.wawbstatussaver.warecovermsg.listener.NotificationListener"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/whatsapp_notification_listener_service"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
 
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true" />
+
         <meta-data
-            android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_launcher_round" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorPrimaryDark" />
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <provider
+            android:authorities="${applicationId}.IronsourceLifecycleProvider"
+            android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider" />
     </application>
 
 </manifest>

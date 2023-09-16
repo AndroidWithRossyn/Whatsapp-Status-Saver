@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_DP"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivUserIcon"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/user_icon" />
+
+            <ImageView
+                android:id="@+id/ivUserIconSelected"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/user_icon_selected"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/frameLayout_DP">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/tvMessageTime"
+                    android:maxLines="1"
+                    android:textColor="@color/chat_main_txt_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    tools:text="username" />
+
+                <TextView
+                    android:id="@+id/tvMessageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/chat_sub_txt_color"
+                    android:textSize="@dimen/_8sdp"
+                    tools:text="2022-01-30 10:00AM" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvLastMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:maxLines="1"
+                android:textColor="@color/chat_sub_txt_color"
+                android:textSize="@dimen/_11sdp"
+                tools:text="message" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@color/thumb_color"
+            app:layout_constraintStart_toEndOf="@id/frameLayout_DP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

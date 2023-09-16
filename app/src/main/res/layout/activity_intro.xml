@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".intro.IntroActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next"/>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/layoutDots"
+        android:alpha=".5"
+        android:background="@android:color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutDots"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_5sdp"
+        android:text="Next"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <!--<Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:text="@string/skip"
+        android:textColor="@android:color/white" />-->
+</RelativeLayout>

@@ -1,71 +1,114 @@
 <resources>
-    <string name="app_name">Social Saver</string>
-    <string name="app_name_nev">Social\nSaver</string>
-    <string name="versioncode">V1.6.8.19</string>
+    <string name="app_name" translatable="false">Status Saver</string>
+
+    <!--sliding navigation-->
+    <string name="srn_drawer_open" translatable="false">Open</string>
+    <string name="srn_drawer_close" translatable="false">Close</string>
+
+    <string name="srn_ex_no_menu_view" translatable="false">No view for menu provided. You must either call .withMenuView(View) or pass a valid resource id to .withMenuLayout(int)</string>
+    <string name="srn_ex_bad_content_view" translatable="false">Your content view must contain exactly one child. Make sure you call inject() after setContentView().</string>
 
 
-
-    <string name="App_ID">ca-app-pub-4577382853353362~2111725699</string>
-    <string name="BannerAd">ca-app-pub-4577382853353362/8094502507</string>
-    <string name="InterstitialAd">ca-app-pub-4577382853353362/2842175826</string>
-
-    <string name="ad_attribution">Ad</string>
-
-    <string name="login">Login</string>
-    <string name="logout">Logout</string>
-    <string name="developername">Ban Rossyn</string>
-    <string name="banrossyn_instalink">https://www.instagram.com/banrossyn</string>
-
-    <string name="open">Open</string>
-    <string name="close">Close</string>
-    <string name="email_feedback">banrossyn@gmail.com</string>
-    <string name="policy_url">https://banrossyn.blogspot.com/2022/01/%20InStoryPrivacyPolicy.html</string>
-    <string name="developerlink">https://play.google.com/store/apps/dev?id=5306067645342206751</string>
-
-
-    <string name="share_txt">Hey view/download this image</string>
-    <string name="share_image_via">Share File via..</string>
-    <string name="gallery_tag">View All Your Downloaded Items</string>
-    <string name="enter_url">Enter Url</string>
-    <string name="enter_valid_url">Enter Valid Url</string>
-
-    <string name="do_u_want_to_dlt">Do you want to delete?</string>
-    <string name="file_deleted">File Deleted.</string>
-    <string name="cancel">Cancel</string>
-    <string name="do_u_want_to_download_media_from_pvt">Don\'t Want to Download Media from Private Account?</string>
-    <string name="no_net_conn">No Internet Connection</string>
-    <string name="download_complete">Download Completed</string>
-    <string name="app_not_available">App Not Available.</string>
-
+    <string name="recent_status">Recent Status</string>
+    <string name="saved_status">Saved Status</string>
+    <string name="wapp">WhatsApp</string>
+    <string name="wa_web">WA Web</string>
+    <string name="d_chat">Direct Chat</string>
+    <string name="wbapp">WA Business</string>
+    <string name="f_font">Fancy Font</string>
+    <string name="fancy" translatable="false">Fancy</string>
+    <string name="prettify" translatable="false">Prettify</string>
+    <string name="emoji" translatable="false">Emoji</string>
+    <string name="edit_text_value">Enter text here</string>
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="more_app">More App</string>
+    <string name="tap_to_open">Tap to open</string>
+    <string name="whatsapp_business">Whatsapp Business</string>
+    <string name="select_all">Select All</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
     <string name="photos">Photos</string>
     <string name="videos">Videos</string>
-    <string name="saved_to">Saved to:</string>
-    <string name="whatsapp_not_installed">Whtasapp not installed.</string>
-    <string name="no_app_installed">No application found to open this file.</string>
-
-
     <string name="share">Share</string>
-    <string name="delete">Delete</string>
-    <string name="paste_link">Paste Link</string>
-    <string name="download">Save</string>
-    <string name="paste">Paste</string>
-    <string name="no_result_found">No items</string>
-    <string name="downloading">Downloading...</string>
-    <string name="getting_downloading_link">Getting Downlading Link...</string>
-
-
-    <string name="gallery">Downloads</string>
-    <string name="download_started">Download Started</string>
+    <string name="repost">Repost</string>
+    <string name="exit_alert">Press back again to Exit</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+    <string name="arabic" translatable="false">العربية</string>
+    <string name="delete_error">Couldn\'t delete some files</string>
+    <string name="delete_success">Deleted successfully</string>
+    <string name="save_error">Couldn\'t save some files</string>
+    <string name="save_success">All Status Are Saved Successfully</string>
+    <string name="delete_alert">Are you sure , You want to delete selected files?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="view_stories">View Stories and Download from Private Account</string>
+    <string name="confirm">Confirm Delete....</string>
+    <string name="del_status">Are you sure, You Want To Delete This Status?</string>
+    <string name="saved_success">Status saved successfully</string>
 
-    <string name="stories">Stories</string>
-    <string name="wamedia">Directory: Download/Social Saver/Whatsapp </string>
-    <string name="allow_whatsapp_access">Allow Whatsapp Access</string>
-    <string name="allow_app_to_access_whatsapp_status_folder">Access Whatsapp Status Folder</string>
-    <string name="allow_whatsapp">Allow</string>
-    <string name="ok">OK</string>
-    <string name="wrong_folder">Wrong folder</string>
-    <string name="selected_wrong_folder">You have selected wrong folder. Please select .Statuses folder to view Whatsapp Status.</string>
+
+    <string name="deleted_record_not_available">Deleted record not available.</string>
+    <string name="deleted_msg">Recover Messages</string>
+    <string name="whatsapp_deleted_msg">Whatsapp Recovered Messages</string>
+    <string name="whatsapp_notification_listener_service">WhatsApp Notification Listener</string>
+    <string name="media_observer_service">Media Observer Service</string>
+    <string name="notification_permission_msg">Need notification permission for deleted message, without permission can\'t read message.</string>
+    <string name="notification_permission_retry">Re-try</string>
+    <string name="notification_permission_deny">Deny</string>
+
+    <!--steps-->
+    <string name="how_to_use">How to use?</string>
+    <string name="step_1">Step 1</string>
+    <string name="first_step">Tap on WhatsApp icon.</string>
+    <string name="step_2">Step 2</string>
+    <string name="second_step">Click to open Whatsapp or WA Business button.</string>
+    <string name="step_3">Step 3</string>
+    <string name="step_three">First you have to see Status from Whatsapp or WA Business.</string>
+    <string name="step_4">Step 4</string>
+    <string name="step_four">Once you seen status in Whatsapp or WA Business then open this application and Pull Down to refresh status, Your seen status will be here in this app and from here you can Download and Share.</string>
+    <string name="status_not_available">Status not available.</string>
+
+    <string name="wapp_permission">Click on this button and Allow permission to access your status</string>
+    <string name="allow_storage_access">Allow storage access</string>
+    <string name="send">Send</string>
+    <string name="enter_your_message">Enter your message</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="select_country">Select country and Enter Mobile Number.</string>
+
+    <string name="toast_saved_to_downloads_folder" translatable="false">Saved to downloads folder</string>
+    <string name="notification_title_tap_to_open" translatable="false">Tap to open</string>
+    <string name="notification_text_saved_as" translatable="false">Saved as %s</string>
+
+
+    <!--intro-->
+    <string name="title_step1" translatable="false">Welcome!!!</string>
+    <string name="desc_step1" translatable="false">This app allows you to save Whatsapp and Whatsapp business status, recover deleted message by reading your notifications and also too many amazing other features</string>
+    <string name="title_step2" translatable="false">How app works?</string>
+    <string name="desc_step2" translatable="false" >After viewing status from whatsapp/whatsapp business you can view all status on this app and you can download that also and After receiving the message with notification, this app recovers the message that the user has deleted/not deleted as well</string>
+    <string name="title_step3" translatable="false">User guide</string>
+    <string name="desc_step3" translatable="false">To get status you must have to view on whatsapp/whatsapp business app after that you can see and download status from this app and This app can\'t recover message which not appear on notification and also messages that have been deleted before you installed this app!</string>
+    <string name="title_step4" translatable="false">Setup</string>
+    <string name="desc_step41" translatable="false">Allow Permissions</string>
+    <string name="desc_step411" translatable="false">Multimedia or Storage Access(1/2)</string>
+    <string name="desc_step4111" translatable="false">Allow to access photos, video etc..</string>
+    <string name="allow" translatable="false">Allow</string>
+    <string name="desc_step42" translatable="false">Read Notifications Access(2/2)</string>
+    <string name="desc_step422" translatable="false">Allow to read or backup your message from notifications</string>
+
+
+
+    <!--admob ids-->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_openads" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+
+    <!--ironSource app ad ids-->
+    <string name="iron_ad_id" translatable="false">106c413b9</string>
+
+
 </resources>
