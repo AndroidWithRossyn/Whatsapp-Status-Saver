@@ -31,8 +31,26 @@
 .
 .
 .
+# Source Code Available at Low Price.
+
+For any inquiry, app support or app customization contact us at
+
+–  banrossyn@gmail.com
+
+–  https://wa.me/+919694260426/
+
+–  https://t.me/banrossyn/
+
+## Note:
+This source code will be offical given directly through the developer. You will not find this on any selling website. To buy the source code, you have to directly connect with the developer. For this, payment will have to be made through the method given by the developer, after payment you will be given the source code through mail. Any kind of change in the app will be charged separately. After purchasing the app, you will be helped till it is published.
+
+Regars
+
+Rossyn
+
 
 >Paid Source Code Available only in 15USD
+
   <a href="https://github.com/OmaPrakash/Whatsapp-Status-Saver/blob/main/StausSaver-debug.apk?raw=true">Download Demo</a>. 
 <p align="center">
     <a href="https://play.google.com/store/apps/details?id=com.banrossyn.socialsaver">
@@ -141,16 +159,14 @@ Please consider rating the app if you are satisfied with the product. Thank you.
 <ul style="list-style-type: circle;">
 <li>InSaver: Reels , Story &amp; Video</li>
 </ul>
-  
-<a href="https://play.google.com/store/apps/details?id=com.banrossyn.post.story.downloader"><img src="https://user-images.githubusercontent.com/118904953/203554664-0d81f250-6127-48be-a632-135ab42dd1a8.png"/></a></td>
+<a href="https://play.google.com/store/apps/details?id=com.banrossyn.post.story.downloader"><img src="https://play-lh.googleusercontent.com/Kp1bkW7eEFO_W9Eyeagog7J9kRxKd51wUnljGuXVKsJkphWU44PgiQaxENYRg4HAjpE=w2560-h1440"/></a></td>
 
 
 <td style="width: 50%; text-align: center;">
 <ul style="list-style-type: circle;">
-<li>InStory : Post &amp; Story Saver</li>
+<li>ThSaver for Threads</li>
 </ul>
-  
-<a href="https://play.google.com/store/apps/details?id=com.banrossyn.storydownloader"><img src="https://play-lh.googleusercontent.com/DjcK-Pc16a_i6cvk2snjyHyT2twaIA3iqOIqBxX0uUwY09hvxb-0k6w02ufoY8Clxg=w2560-h1440" /></a></td>
+<a href="https://play.google.com/store/apps/details?id=com.banrossyn.storydownloader"><img src="https://github.com/OmaPrakash/OmaPrakash/assets/118904953/24fd82da-1d90-41fe-83d7-e8bf8727305f" /></a></td>
 
 
 </tr>
@@ -179,16 +195,16 @@ Please consider rating the app if you are satisfied with the product. Thank you.
 <tr>
 <td style="width: 50%; text-align: center;">
 <ul style="list-style-type: circle;">
-<li>WA &amp; WAB Status Saver</li>
+<li>Status Saver for Whatsapp</li>
 </ul>
-<a href="https://github.com/BanRossyn/WA-WAB-Status-Saver"><img src="https://play-lh.googleusercontent.com/ShIbFEANczFIjgV9BNSDjo42kME4iz6fq8yCUm9hfca27Rhgc88coq5tBfYGF7SBy_5K=w2560-h1440"/></a></td>
+<a href="https://play.google.com/store/apps/details?id=com.banrossyn.socialsaver"><img src="https://play-lh.googleusercontent.com/QPHj8L5DtnhYYdc6ed0siSq3azbeWtPKyryf3E2N5EYZD8LB0Zbjtzmc8J_5kS1wVaM=w2560-h1440"/></a></td>
 
 
 <td style="width: 50%; text-align: center;">
 <ul style="list-style-type: circle;">
 <li>2048 Classic</li>
 </ul>
-<a href="https://github.com/BanRossyn/2048-Classic"><img src="https://play-lh.googleusercontent.com/rtVpupsFXuIF83hHqlPCUIHa1d_D9YhinfzsuC7IOQtXOKZJSCgIfAMKuevq2p8KyRWd=w2560-h1440" /></a></td>
+<a href="https://play.google.com/store/apps/details?id=com.banrossyn.merge2048"><img src="https://play-lh.googleusercontent.com/rtVpupsFXuIF83hHqlPCUIHa1d_D9YhinfzsuC7IOQtXOKZJSCgIfAMKuevq2p8KyRWd=w2560-h1440" /></a></td>
 
 
 </tr>
@@ -202,7 +218,7 @@ Please consider rating the app if you are satisfied with the product. Thank you.
 <ul style="list-style-type: circle;">
 <li>Tic Tac Toe - Online</li>
 </ul>
-<a href="https://github.com/BanRossyn/Tic-Tac-Toe-online"><img src="https://play-lh.googleusercontent.com/qq_V4V8iP8CLCIRMj8gk8n0TJ8Bd6uPezio14PaHKcraFPvxHknCqaXtlDnzv3HpA8c=w2560-h1440"/></a></td>
+<a href="https://play.google.com/store/apps/details?id=com.banrossyn.tictactoeonline"><img src="https://play-lh.googleusercontent.com/qq_V4V8iP8CLCIRMj8gk8n0TJ8Bd6uPezio14PaHKcraFPvxHknCqaXtlDnzv3HpA8c=w2560-h1440"/></a></td>
 
 
 
