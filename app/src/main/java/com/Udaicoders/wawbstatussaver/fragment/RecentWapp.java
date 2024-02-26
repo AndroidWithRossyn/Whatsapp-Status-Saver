@@ -22,11 +22,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.documentfile.provider.DocumentFile;
 import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 
 import com.Udaicoders.wawbstatussaver.R;
 import com.Udaicoders.wawbstatussaver.adapter.RecentAdapter;
@@ -52,6 +53,56 @@ public class RecentWapp extends Fragment implements RecentAdapter.OnCheckboxList
     SwipeRefreshLayout swipeToRefresh;
     LinearLayout sAccessBtn;
     int REQUEST_ACTION_OPEN_DOCUMENT_TREE = 101;
+    static String TAG = "resultCheck";
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate:  Whatsapp");
+    }
+
+    @Override
+    public void onResume() {
+        Log.d(TAG, "onResume:  Whatsapp");
+        super.onResume();
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        Log.d(TAG, "onAttach:  Whatsapp");
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onDestroyView() {
+        Log.d(TAG, "onDestroyView:  Whatsapp");
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onPause() {
+        Log.d(TAG, "onPause:  Whatsapp");
+        super.onPause();
+    }
+
+    @Override
+    public void onStart() {
+        Log.d(TAG, "onStart:  Whatsapp");
+        super.onStart();
+    }
+
+    @Override
+    public void onStop() {
+        Log.d(TAG, "onStop:  Whatsapp");
+        super.onStop();
+    }
+
+    @Override
+    public void onDetach() {
+        Log.d(TAG, "onDetach:  Whatsapp");
+        super.onDetach();
+    }
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -59,6 +110,7 @@ public class RecentWapp extends Fragment implements RecentAdapter.OnCheckboxList
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recent_fragment, container, false);
 
+        Log.d(TAG, "onCreateView:  Whatsapp");
         loaderLay = rootView.findViewById(R.id.loaderLay);
         emptyLay = rootView.findViewById(R.id.emptyLay);
 
@@ -188,6 +240,7 @@ public class RecentWapp extends Fragment implements RecentAdapter.OnCheckboxList
     class deleteAll extends AsyncTask<Void, Void, Void> {
         int success = -1;
         AlertDialog alertDialog;
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -244,6 +297,7 @@ public class RecentWapp extends Fragment implements RecentAdapter.OnCheckboxList
     class downloadAll extends AsyncTask<Void, Void, Void> {
         AlertDialog alertDialog;
         int success = -1;
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -316,6 +370,7 @@ public class RecentWapp extends Fragment implements RecentAdapter.OnCheckboxList
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Log.d(TAG, "onDestroy:  Whatsapp ");
         if (async != null) {
             async.cancel(true);
         }
