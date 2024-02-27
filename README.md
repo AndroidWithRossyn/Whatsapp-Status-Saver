@@ -20,7 +20,7 @@
  # About this App:
  
 >  Note: `-- Apache License 2.0` you can't Publish any Source code without permission.
-> 
+
 This Story Saver & Downloader - Social Saver, can help you save photos and videos in simple steps.
 Looking for an app that can easily download or repost images and videos without logging in .
 This download and repost app is definitely what you want, and would like to instake it.
