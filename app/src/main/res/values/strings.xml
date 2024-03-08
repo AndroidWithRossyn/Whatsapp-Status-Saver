@@ -108,7 +108,7 @@
     <string name="admob_openads" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
 
     <!--ironSource app ad ids-->
-    <string name="iron_ad_id" translatable="false">106c413b9</string>
+    <string name="iron_ad_id" translatable="false"></string>
 
 
 </resources>

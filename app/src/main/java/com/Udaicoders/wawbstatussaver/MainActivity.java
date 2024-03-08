@@ -1,15 +1,5 @@
 package com.Udaicoders.wawbstatussaver;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.SwitchCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -25,9 +15,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.google.android.material.tabs.TabLayout;
-import com.ironsource.mediationsdk.IronSource;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.Udaicoders.wawbstatussaver.font.FontActivity;
 import com.Udaicoders.wawbstatussaver.fragment.RecentWapp;
 import com.Udaicoders.wawbstatussaver.fragment.RecentWappBus;
@@ -36,6 +32,9 @@ import com.Udaicoders.wawbstatussaver.util.SharedPrefs;
 import com.Udaicoders.wawbstatussaver.util.Utils;
 import com.Udaicoders.wawbstatussaver.warecovermsg.DeletedMsgActivity;
 import com.Udaicoders.wawbstatussaver.waweb.WAWebActivity;
+import com.bumptech.glide.Glide;
+import com.google.android.material.tabs.TabLayout;
+import com.ironsource.mediationsdk.IronSource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,15 +47,12 @@ public class MainActivity extends AppCompatActivity {
     private SlidingRootNav slidingRootNav;
     ImageView whatsIV, navIV, nTop;
 
-    LinearLayout nWapp, nWbapp, nSaved,
-            nLang, nShare, nRate, nPrivacy, nMore, nHow, nWeb, nChat, nFont, nWRecover;
+    LinearLayout nWapp, nWbapp, nSaved, nLang, nShare, nRate, nPrivacy, nMore, nHow, nWeb, nChat, nFont, nWRecover;
     RelativeLayout nDark;
 
-    ImageView niWapp, niWbapp, niSaved,
-            niDark, niLang, niShare, niRate, niPrivacy, niMore, niHow, niWeb, niChat, niFont, niWRecover;
+    ImageView niWapp, niWbapp, niSaved, niDark, niLang, niShare, niRate, niPrivacy, niMore, niHow, niWeb, niChat, niFont, niWRecover;
 
-    TextView ntWapp, ntWbapp, ntSaved,
-            ntDark, ntLang, ntShare, ntRate, ntPrivacy, ntMore, ntHow, ntWeb, ntChat, ntFont, ntWRecover;
+    TextView ntWapp, ntWbapp, ntSaved, ntDark, ntLang, ntShare, ntRate, ntPrivacy, ntMore, ntHow, ntWeb, ntChat, ntFont, ntWRecover;
 
     SwitchCompat modeSwitch;
 
@@ -136,17 +132,10 @@ public class MainActivity extends AppCompatActivity {
             slidingRootNav.openMenu(true);
         });
 
-        slidingRootNav = new SlidingRootNavBuilder(this)
-                .withMenuOpened(false)
-                .withContentClickableWhenMenuOpened(false)
-                .withSavedState(savedInstanceState)
-                .withMenuLayout(R.layout.menu_left_drawer)
-                .inject();
+        slidingRootNav = new SlidingRootNavBuilder(this).withMenuOpened(false).withContentClickableWhenMenuOpened(false).withSavedState(savedInstanceState).withMenuLayout(R.layout.menu_left_drawer).inject();
 
         nTop = findViewById(R.id.nTop);
-        Glide.with(this)
-                .load(R.drawable.mtop)
-                .into(nTop);
+        Glide.with(this).load(R.drawable.mtop).into(nTop);
 
         initDrawer();
 
@@ -195,8 +184,7 @@ public class MainActivity extends AppCompatActivity {
         dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.popup_lay);
 
-        dialog.getWindow().setBackgroundDrawable(
-                new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
         RelativeLayout btnWapp = dialog.findViewById(R.id.btn_wapp);
         RelativeLayout btnWappBus = dialog.findViewById(R.id.btn_wapp_bus);
@@ -231,8 +219,7 @@ public class MainActivity extends AppCompatActivity {
         dialogLang = new Dialog(MainActivity.this);
         dialogLang.setContentView(R.layout.lang_lay);
 
-        dialogLang.getWindow().setBackgroundDrawable(
-                new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialogLang.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
         TextView txtEn = dialogLang.findViewById(R.id.txt_en);
         TextView txtHi = dialogLang.findViewById(R.id.txt_hi);
@@ -272,8 +259,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPagerAdapter adapter;
 
     private void setupViewPager(ViewPager viewPager) {
-        adapter = new ViewPagerAdapter(
-                getSupportFragmentManager());
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         adapter.addFragment(new RecentWapp(), "Whatsapp");
         adapter.addFragment(new RecentWappBus(), "WA Business");
@@ -316,8 +302,7 @@ public class MainActivity extends AppCompatActivity {
         txt.setText(tabs[0]);
         txt.setTextColor(getResources().getColor(R.color.tab_txt_press));
         txt.setBackgroundResource(R.drawable.press_tab);
-        FrameLayout.LayoutParams tabp = new FrameLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels * 438 / 1080,
-                getResources().getDisplayMetrics().heightPixels * 140 / 1920);
+        FrameLayout.LayoutParams tabp = new FrameLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels * 438 / 1080, getResources().getDisplayMetrics().heightPixels * 140 / 1920);
         txt.setLayoutParams(tabp);
         TabLayout.Tab tab = tabLayout.getTabAt(0);
         tab.setCustomView(null);
@@ -330,8 +315,7 @@ public class MainActivity extends AppCompatActivity {
         txt.setText(tabs[pos]);
         txt.setTextColor(getResources().getColor(R.color.tab_txt_press));
         txt.setBackgroundResource(R.drawable.press_tab);
-        FrameLayout.LayoutParams tab = new FrameLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels * 438 / 1080,
-                getResources().getDisplayMetrics().heightPixels * 140 / 1920);
+        FrameLayout.LayoutParams tab = new FrameLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels * 438 / 1080, getResources().getDisplayMetrics().heightPixels * 140 / 1920);
         txt.setLayoutParams(tab);
         return v;
     }
@@ -342,8 +326,7 @@ public class MainActivity extends AppCompatActivity {
         txt.setText(tabs[pos]);
         txt.setTextColor(getResources().getColor(R.color.tab_txt_unpress));
         txt.setBackgroundResource(R.drawable.unpress_tab);
-        FrameLayout.LayoutParams tab = new FrameLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels * 438 / 1080,
-                getResources().getDisplayMetrics().heightPixels * 140 / 1920);
+        FrameLayout.LayoutParams tab = new FrameLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels * 438 / 1080, getResources().getDisplayMetrics().heightPixels * 140 / 1920);
         txt.setLayoutParams(tab);
         return v;
     }
@@ -473,8 +456,7 @@ public class MainActivity extends AppCompatActivity {
                     setUnpress();
                     setPress(niSaved, ntSaved, R.color.drawer_press);
 
-                        navigate(new Intent(MainActivity.this, MyStatusActivity.class));
-
+                    navigate(new Intent(MainActivity.this, MyStatusActivity.class));
 
 
                     slidingRootNav.closeMenu();
@@ -484,7 +466,7 @@ public class MainActivity extends AppCompatActivity {
                     setUnpress();
                     setPress(niWeb, ntWeb, R.color.drawer_press);
 
-                        navigate(new Intent(MainActivity.this, WAWebActivity.class));
+                    navigate(new Intent(MainActivity.this, WAWebActivity.class));
 
 
                     slidingRootNav.closeMenu();
@@ -494,7 +476,7 @@ public class MainActivity extends AppCompatActivity {
                     setUnpress();
                     setPress(niChat, ntChat, R.color.drawer_press);
 
-                        navigate(new Intent(MainActivity.this, DChatActivity.class));
+                    navigate(new Intent(MainActivity.this, DChatActivity.class));
 
 
                     slidingRootNav.closeMenu();
@@ -504,7 +486,7 @@ public class MainActivity extends AppCompatActivity {
                     setUnpress();
                     setPress(niFont, ntFont, R.color.drawer_press);
 
-                        navigate(new Intent(MainActivity.this, FontActivity.class));
+                    navigate(new Intent(MainActivity.this, FontActivity.class));
 
 
                     slidingRootNav.closeMenu();
@@ -515,7 +497,7 @@ public class MainActivity extends AppCompatActivity {
                     setPress(niWRecover, ntWRecover, R.color.drawer_press);
 
 
-                        navigate(new Intent(MainActivity.this, DeletedMsgActivity.class));
+                    navigate(new Intent(MainActivity.this, DeletedMsgActivity.class));
 
 
                     slidingRootNav.closeMenu();
@@ -595,9 +577,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void moreApp() {
-        startActivity(new Intent(
-                Intent.ACTION_VIEW,
-                Uri.parse("https://play.google.com/store/apps/dev?id=7081479513420377164&hl=en")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=7081479513420377164&hl=en")));
     }
 
     private long mLastBackClick = 0;
