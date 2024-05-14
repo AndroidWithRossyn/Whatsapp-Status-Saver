@@ -1,7 +1,6 @@
 plugins {
-    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
     id 'com.android.application'
-
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 }
 
 android {
