@@ -9,15 +9,12 @@
 ![Stars](https://img.shields.io/github/stars/AndroidWithRossyn/Whatsapp-Status-Saver)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AndroidWithRossyn/Whatsapp-Status-Saver)
 ![pv](https://pageview.vercel.app/?github_user=Whatsapp-Status-Saver)
-<a href="https://t.me/banrossyn" target="_blank"><img src="https://img.shields.io/badge/Telegram-%40banrossyn-28a8ea"></a>
-<a href="https://wa.me/+919694260426/" target="_blank"><img src="https://img.shields.io/badge/whatsapp-%40+919694260426-28a8ea"></a>
-<a href="https://www.linkedin.com/in/banrossyn/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-banrossyn-informational"></a>
-<a href="mailto:banrossyn@gmail.com"><img src="https://img.shields.io/badge/Email-banrossyn%40gmail.com-blue"></a>
+
 
 </div>
 
 
- # About this App:
+### About this App:
  
 >  Note: `-- Apache License 2.0` you can't Publish any Source code without permission.
 
@@ -36,14 +33,14 @@ Status Saver Pro is for easy to download any WA & WB images, videos status, WA w
 This app allow you to download images, GIF and Video status from your WA or WA Business and easily share with your friends.
 
 
-# Notable Features:
+### Notable Features:
 - WA status saver
 -WA Image & Video status downloader
 - Share WA Image & Video status
 - WA & WB Web
 - WB status saver
 - WB Image & Video status downloader
--Direct chat without saving number
+- Direct chat without saving number
 - Share WB Image & Video status
 - Photo, GIF and Video status saver
 - Save and repost Image & Videos.
@@ -64,7 +61,7 @@ This app allow you to download images, GIF and Video status from your WA or WA B
 </p>
 
 
-# How to Use (Status)?
+### How to Use (Status)?
 1 - Check the Desired Status / Story...
 
 2 - Open App, Click on any Status to View or Use Multi Selection...
@@ -74,7 +71,7 @@ This app allow you to download images, GIF and Video status from your WA or WA B
 The Status is Instantly saved to your Gallery! 😉😃
   
 
-# Disclaimer about the usage of Social Saver app:
+### Disclaimer about the usage of Social Saver app:
 
 According to the Whatsapp user copyright procedures, you need to get permission from the owner of that Whatsapp if you want to repost them
 We are not responsible for any intellectual property violation that results from an unauthorized repost of a video or photo fetched from social media using Story Saver & Downloader .
@@ -83,7 +80,7 @@ Social Saver app is not associated with Whatsapp
 
 
   
-# Screenshots:
+### Screenshots:
 
  <p align="center">
     <a>
@@ -110,7 +107,31 @@ Social Saver app is not associated with Whatsapp
       <img src="https://raw.githubusercontent.com/AndroidWithRossyn/Whatsapp-Status-Saver/main/screens/screenshot%20(6).webp" hight="400" width="200" />
     </a>
   </p>
-  
+
+
+### Find this Repository useful? ❤️
+Support it by joining stargazers for this repository. ⭐
+
+Also, [follow me on GitHub](https://github.com/AndroidWithRossyn/) for my next creations! 🤩
+
+
+### Copyright & License
+```
+© 2024 Rossyn. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
